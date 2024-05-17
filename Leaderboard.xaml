@@ -1,0 +1,22 @@
+﻿<Window x:Class="course_work.Leaderboard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:course_work"
+        mc:Ignorable="d"
+        Title="Leaderboard" Height="615" Width="600" AutomationProperties.Name="Leaderboard" WindowStyle="None" WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="MainFon_1.jpg"/>
+    </Window.Background>
+    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" RenderTransformOrigin="0.5,0.57">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <DataGrid HorizontalAlignment="Center" Height="450
+                  " VerticalAlignment="Top" Width="500" Name="Table_Players" Margin="0,50,0,0"
+                   ColumnWidth="163" />
+        <Button x:Name="MainButton" Content="Главное меню" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="150" Height="80" Grid.RowSpan="3" FontSize="20" Margin="0,0,0,15" Click="MainButton_Click" Background="#FFE8FC00" />
+    </Grid>
+</Window>
